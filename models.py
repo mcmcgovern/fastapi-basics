@@ -15,3 +15,11 @@ class User(BaseModel):
     last_name: str
     middle_name: Optional[str]
     roles: List[Role]
+
+
+
+class UserUpdateRequest(BaseModel):
+    first_name: Optional[str]
+    last_name: Optional[str]
+    middle_name: Optional[str]
+    roles: Optional[List[Role]]
